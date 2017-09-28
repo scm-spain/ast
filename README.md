@@ -15,6 +15,13 @@ require('@schibstedspain/ast')
 
 ## AST Release History
 
+### 0.9.0 (current version)
+	
+* Add support for Publisher ID
+* Fix internal error causing "ad_type undefined"
+* Fix bug with Target ID not set for Native ads
+* Other minor bug fixes and improvements
+
 ### 0.8.0
 ### Breaking Change
 This version of AST contains breaking changes. It will not be promoted to the production version of AST until on or after July 10, 2017. For more details about out breaking change policy, please refer to the Breaking Changes - AST API wiki page.
