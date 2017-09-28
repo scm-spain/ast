@@ -1,0 +1,34 @@
+{
+  "name": "@schibstedspain/ast",
+  "version": "0.8.0",
+  "description": "The AppNexus Seller Tag (AST) is a lightweight JavaScript SDK that runs in the header or body of a web page in a user's browser and allows publishers to conduct auctions directly from the page. AST consolidates all ad slots on a page to be auctioned and sends information about them in a single ad request whenever possible. AST loads asynchronously, meaning that ad calls do not block the page content from loading.",
+  "main": "dist/",
+  "scripts": {
+    "cleanDistFolder": "rm -Rf ./dist",
+    "prepublish": "npm run build",
+    "build": "npm run cleanDistFolder && babel src --ignore src/ast.js --out-dir dist && cp src/ast.js dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:scm-spain/ast.git"
+  },
+  "keywords": [
+    "appnexus",
+    "Appnexus Seller tag",
+    "ast"
+  ],
+  "author": "Schibsted spain",
+  "license": "LicenseRef-LICENSE",
+  "devDependencies": {
+    "@schibstedspain/sui-lint": "^2.1.0",
+    "babel-cli": "^6.24.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-sui": "1",
+    "babel-register": "^6.24.0"
+  },
+  "babel": {
+    "presets": [
+      "sui"
+    ]
+  }
+}
