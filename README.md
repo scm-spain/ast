@@ -12,3 +12,5 @@ import it with require
 ```
 require('@schibstedspain/ast')
 ```
+
+Current version of the AST in use is 0.9.0, last stable release.
