@@ -13,27 +13,4 @@ import it with require
 require('@schibstedspain/ast')
 ```
 
-## AST Release History
-
-### 0.9.0 (current version)
-	
-* Add support for Publisher ID
-* Fix internal error causing "ad_type undefined"
-* Fix bug with Target ID not set for Native ads
-* Other minor bug fixes and improvements
-
-### 0.8.0
-### Breaking Change
-This version of AST contains breaking changes. It will not be promoted to the production version of AST until on or after July 10, 2017. For more details about out breaking change policy, please refer to the Breaking Changes - AST API wiki page.
-* Support v3native assets. Changes consist of:
-  * The adTypeobjectreturnedfornativedemandwillbechanging to support our new native asset model, and to be more aligned with the OpenRTB native standard.
-  * The following fields have been renamed:
-      * description renamed to body
-      * mainMedia renamed to image
-  * The following fields have been removed:
-      * custom
-      * rating
-  * The following fields have been moved:
-      * iconImgUrl has been moved under the icon object to icon.url
-* Improvement in page performance by reducing the number of times our Viewability javascript can be inserted to once per page (instead of once per ad slot)
-* Minor bug fixes
+Current version of the AST in use is 0.9.0, last stable release.
