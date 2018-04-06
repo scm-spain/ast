@@ -17,4 +17,4 @@ import it with require
 require('@schibstedspain/ast')
 ```
 
-Current version of the AST in use is 0.11.0, last stable release.
+Current version of the AST in use is 0.14.0, last stable release.
